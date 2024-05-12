@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Digital Dream';
+    src: url('../public/fonts/digital-dream.ttf') format('truetype');
+}
+
+.artist, .title, .mins, .fury {
+  position: absolute;
+  text-orientation: upright;
+  font-size: 64px;
+
+}
+
+.fury {
+  width: 100%;
+  text-align: center;
+  font-size: 256px !important;
+  line-height: 256px;
+  transform: translate(30px, 414px);
+}
+
+.mins {
+  top: 50px;
+  left: 527px;
+  width: 900px;
+  text-align: start;
+}
+
+.title {
+  bottom: 45px;
+  left: 531px;
+  text-align: start;
+  width: 2000px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  font-family: 'Digital Dream';
+  font-size: 15rem;
+  color: #FFF;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  top: 0;
+  font-size: 64px;
+}
+
+.instrumental-text-container {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 111px 0;
+  letter-spacing: 47.25px;
+}
+
+.intrume, .ntalmix {
+  position: absolute;
+  white-space: pre;
+}
+
+.intrume {
+  transform: translate(-449px, 0);
+}
+
+.ntalmix {
+  transform: translate(453px, -4px);
+}
