@@ -1,7 +1,8 @@
 # Fury Album 1 Visualizer
 
-This is a fork of my React/HTML5 based [music visualizer](https://github.com/rapka/spin-viz), customized for the artwork to my 2024 album [Fury - 34 Minutes of Fury]
+This is a fork of my React/HTML5 based [music visualizer](https://github.com/rapka/spin-viz), customized for the [artwork](https://www.youtube.com/watch?v=4olse9eXdbk) to my 2024 album [Fury - 34 Minutes of Fury]
 (https://collegehill.bandcamp.com/album/34-minutes-of-fury).
+
 
 ## Setup
 
@@ -17,33 +18,22 @@ Use the spacebar to being playback. There's currently no support for pausing and
 
 ## Configuration
 
-The app is configured via `src/config.json`. It follows the following format:
+The app is configured via `src/config/config.json`. It follows the following format:
 
 ```
 {
-	"artist": "",
-	"title": "",
-	"track": "song.wav",
-	"textColor": "#FFFFFF",
-	"scopes": {
-		"rotationOffset": 0,
-		"colors": ["#FFFFFF", "#FFFFFF", "#888888"]
-	},
-	"background": {
-		"color": "#000000",
-		"image": "background.jpg",
-		"css": "",
-		"loopDuration": 0,
-		"vertical": false
-	},
-	"art": {
-		"rotationDuration": 66,
-		"backwards": false,
-		"file": "logo.png",
-		"blendMode": "normal"
-	}
+	"artist": "Fury",
+	"album": "34 Minutes Of",
+	"title": "Down",
+	"mix": "Sober Mix ",
+	"track": "12 Go Out With A (Remastered).wav",
+	"videoSrc": "34_minutes_video_final_small.mp4",
+	"invert": true,
+	"noise": false
 }
 ```
+
+The `mix` field corresponts to the vertical text used to desribe the
 
 Images and audio files should be placed in `/public`.
 
